@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar {
+  display: none !important;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
 @layer base {
   .nav-item {
     @apply rounded-full px-4 py-1.5 text-sm font-semibold text-white/70 transition duration-300 hover:bg-white/10 hover:text-white;
@@ -9,5 +24,38 @@
 
   .nav-item-active {
     @apply bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900;
+  }
+
+  .btn-outline {
+    @apply inline-flex h-12 items-center justify-center gap-2 rounded-xl border border-white/15 px-6;
+  }
+  .btn-white {
+    @apply inline-flex h-12 items-center justify-center gap-2 rounded-xl border border-white border-white/15 bg-white px-6 text-gray-950;
+  }
+
+  .hero-bg-ring {
+    @apply absolute inset-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5;
+  }
+
+  .hero-star-color {
+    @apply text-emerald-300;
+  }
+
+  .hero-sparkle-color {
+    @apply text-emerald-300/20;
+  }
+
+  .hero-circle-color {
+    @apply rounded-full bg-emerald-300/20;
+  }
+
+  .bg-text-gradient {
+    @apply bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply lg:max-w-5xl;
   }
 }
