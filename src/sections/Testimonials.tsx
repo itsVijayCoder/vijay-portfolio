@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const TestimonialsSection = () => {
   return (
-    <div className="py-16 lg:py-24" id="testimonials">
+    <section id="testimonials" className="py-20 lg:py-24">
       <div className="container">
         <SectionHeader
           eyeBrows="Happy Client"
@@ -43,6 +43,6 @@ export const TestimonialsSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
