@@ -5,7 +5,7 @@ export const BgGrain = () => {
   return (
     <>
       <div
-        className="absolute inset-0 -z-30 opacity-5"
+        className="absolute inset-0 -z-10 opacity-5"
         style={{ backgroundImage: `url(${grainImage.src})` }}
       ></div>
     </>

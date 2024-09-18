@@ -1,79 +1,29 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
 import Image from "next/image";
 import Link from "next/link";
 import { BgGrain } from "@/components/BgGrain";
-
-const portfolioProjects = [
-  {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
-  },
-  {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
-  },
-];
+import { SectionHeader } from "@/components/SectionHeader";
+import { portfolioProjects } from "@/db/projectsData";
+import { Card } from "@/components/ui/Card";
 
 export const ProjectsSection = () => {
   return (
-    <div id="projects" className="py-20 lg:py-24">
+    <div id="projects" className="py-16 lg:py-24">
       <section className="container">
-        <div className="flex justify-center">
-          <p className="bg-text-gradient font-semibold uppercase tracking-widest md:font-bold">
-            Real-world Results
-          </p>
-        </div>
-
-        {/* <div className="mx-auto max-w-lg"> */}
-        <h2 className="mt-6 text-center font-calistoga text-3xl md:text-5xl">
-          Featured Projects
-        </h2>
-        <p className="mx-auto mt-4 max-w-md text-center text-white/60 md:text-lg lg:max-w-lg lg:text-xl">
-          See how I transformed concepts into engaging digital experiences.
-        </p>
-        {/* </div> */}
+        <SectionHeader
+          eyeBrows="Real-world Results"
+          title="Featured Projects"
+          description="See how I transformed concepts into engaging digital experiences."
+        />
 
         <div className="mt-10 flex flex-col gap-20 md:mt-20">
           {portfolioProjects?.map((project) => (
-            <div
+            <Card
               key={project.title}
-              className="relative z-0 overflow-hidden rounded-3xl bg-gray-800 px-8 pt-8 after:pointer-events-none after:absolute after:inset-0 after:z-10 after:rounded-3xl after:outline after:outline-2 after:-outline-offset-2 after:outline-white/20 after:content-[''] md:px-10 md:pt-12 lg:px-20 lg:pt-16"
+              className="px-8 pb-0 pt-8 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
             >
-              <BgGrain />
-
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-text-gradient inline-flex gap-2 text-sm font-bold uppercase tracking-widest">
@@ -116,7 +66,7 @@ export const ProjectsSection = () => {
                   />
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </section>

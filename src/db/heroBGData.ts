@@ -1,10 +1,3 @@
-export const navItemData = [
-  { name: "Home", link: "/" },
-  { name: "Projects", link: "#projects" },
-  { name: "About", link: "#about" },
-  { name: "Contact", link: "#contact", isActive: true },
-];
-
 export const heroBGImage = [
   { id: 1, tag: "star", orbitSize: 800, orbitRotation: -70, imgSize: 28 },
   { id: 2, tag: "star", orbitSize: 550, orbitRotation: 20, imgSize: 12 },
