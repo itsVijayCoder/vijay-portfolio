@@ -17,6 +17,7 @@ export const Footer = () => {
           <nav className="flex flex-col items-center gap-6 md:flex-row">
             {footerLinks?.map((link) => (
               <Link
+                key={link.id}
                 href={link.href}
                 target="_blank"
                 className="inline-flex items-center gap-2 rounded-full p-2 text-sm font-semibold text-white/80 transition duration-500 hover:bg-emerald-300/20 hover:text-white"
