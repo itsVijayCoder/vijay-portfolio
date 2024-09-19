@@ -18,8 +18,8 @@ export default function Home() {
       <main>
         <ProjectsSection />
         <TapeSection />
-        <TestimonialsSection />
         <AboutSection />
+        <TestimonialsSection />
         <ContactSection />
       </main>
 
