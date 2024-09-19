@@ -27,10 +27,10 @@ body::-webkit-scrollbar {
   }
 
   .btn-outline {
-    @apply inline-flex h-12 items-center justify-center gap-2 rounded-xl border border-white/15 px-6;
+    @apply inline-flex h-12 items-center justify-center gap-2 rounded-xl border border-white/15 px-6 hover:bg-white/5;
   }
   .btn-white {
-    @apply inline-flex h-12 items-center justify-center gap-2 rounded-xl border border-white border-white/15 bg-white px-6 text-gray-950;
+    @apply inline-flex h-12 items-center justify-center gap-2 rounded-xl border border-white border-white/15 bg-white px-6 text-gray-950 hover:bg-white/85;
   }
 
   .hero-bg-ring {

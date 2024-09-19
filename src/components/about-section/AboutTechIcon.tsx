@@ -1,14 +1,21 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
-export const AboutTechIcon = ({
-  component,
-}: {
+type AboutTechIconProps = {
   component: React.ElementType;
-}) => {
+  className?: string;
+};
+
+export const AboutTechIcon = ({ component, className }: AboutTechIconProps) => {
   const Component = component;
   return (
     <>
-      <Component className="size-10 fill-[url(#tech-icon-gradient)]" />
+      <Component
+        className={twMerge(
+          "size-10 fill-[url(#tech-icon-gradient)]",
+          className,
+        )}
+      />
 
       <svg className="absolute size-0">
         <linearGradient id="tech-icon-gradient">

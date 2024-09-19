@@ -1,6 +1,6 @@
-export const navItemData = [
-  { name: "Home", link: "/" },
-  { name: "Projects", link: "#projects" },
-  { name: "About", link: "#about" },
-  { name: "Contact", link: "#contact", isActive: true },
+export const navItemLinks = [
+  { name: "Home", link: "/", isActive: true },
+  { name: "Projects", link: "#projects", isActive: false },
+  { name: "About", link: "#about", isActive: false },
+  { name: "Contact", link: "#contact", isActive: false },
 ];
