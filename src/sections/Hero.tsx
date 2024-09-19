@@ -5,17 +5,18 @@ import ArrowDown from "@/assets/icons/arrow-down.svg";
 import { HeroRings } from "@/components/hero-section/HeroRings";
 import { HeroStars } from "@/components/hero-section/HeroStars";
 import { BgGrain } from "@/components/BgGrain";
+import Link from "next/link";
 export const HeroSection = () => {
   return (
-    <div className="relative z-0 overflow-x-clip py-32 md:py-48 lg:py-60">
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+    <section className="relative z-0 overflow-x-clip py-32 md:py-48 lg:py-60">
+      <div className="absolute inset-0 -z-10 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <BgGrain />
         <HeroRings />
 
         <HeroStars />
       </div>
 
-      <section className="container">
+      <section className="container z-10">
         <div className="flex flex-col items-center">
           <Image
             src={personWithLaptop}
@@ -41,16 +42,17 @@ export const HeroSection = () => {
         </div>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
-          <button className="btn-outline">
+          <Link href="#projects" className="btn-outline">
             <span className="font-semibold">Explore my work </span>
             <ArrowDown className="size-4" />
-          </button>
-          <button className="btn-white">
+          </Link>
+
+          <Link href="#contact" className="btn-white">
             <span className="">👋</span>
             <span className="font-semibold">Let's Connect</span>
-          </button>
+          </Link>
         </div>
       </section>
-    </div>
+    </section>
   );
 };

@@ -1,7 +1,7 @@
 import StarImage from "@/assets/icons/star.svg";
 import SparkleImage from "@/assets/icons/sparkle.svg";
 import { HeroOrbit } from "./HeroOrbit";
-import { heroBGImage } from "@/db/data";
+import { heroBGImage } from "@/db/heroBGData";
 
 export const HeroStars = () => {
   return (
