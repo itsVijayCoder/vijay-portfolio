@@ -12,7 +12,7 @@ export const Header = () => {
   // console.log("pathName", pathName);
 
   return (
-    <section className="relative z-10">
+    <section className="relative z-10 overflow-x-clip">
       <div className="absolute left-1/2 top-0 -z-10 h-[400px] w-[1600px] -translate-x-1/2 bg-emerald-300/20 [mask-image:radial-gradient(50%_50%_at_top_center,black,transparent)]"></div>
 
       <div className="fixed top-3 z-10 flex w-full items-center justify-center">
