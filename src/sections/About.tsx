@@ -14,22 +14,52 @@ export const AboutSection = () => {
           description="Learn more about who I am, what I do, and what I'm passionate about."
         />
 
-        <div className="mt-20 flex flex-col gap-6 md:grid md:grid-cols-5">
-          <div className="col-span-2">
-            <MyReadings />
+        <div className="mt-20 flex flex-col gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
+            <div className="md:col-span-2 lg:col-span-1">
+              <MyReadings />
+            </div>
+
+            <div className="md:col-span-3 lg:col-span-2">
+              <MyToolbox />
+            </div>
           </div>
 
-          <div className="md:col-span-3">
-            <MyToolbox />
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
+            <div className="md:col-span-3 lg:col-span-2">
+              <MyHobbies />
+            </div>
+
+            <div className="md:col-span-2 lg:col-span-1">
+              <MyMapLocation />
+            </div>
           </div>
 
-          <div className="md:col-span-3">
-            <MyHobbies />
+          {/* For future design reference */}
+
+          {/* <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-7">
+            <div className="md:col-span-2 lg:col-span-2">
+              <MyMapLocation />
+            </div>
+
+            <div className="md:col-span-3 lg:col-span-3">
+              <MyHobbies />
+            </div>
+
+            <div className="md:col-span-2 lg:col-span-2">
+              <MyMapLocation />
+            </div>
           </div>
 
-          <div className="col-span-2">
-            <MyMapLocation />
-          </div>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
+            <div className="md:col-span-3 lg:col-span-2">
+              <MyToolbox />
+            </div>
+
+            <div className="md:col-span-2 lg:col-span-1">
+              <MyReadings />
+            </div>
+          </div> */}
         </div>
       </div>
     </section>

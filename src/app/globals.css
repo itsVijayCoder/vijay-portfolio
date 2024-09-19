@@ -48,9 +48,12 @@ body::-webkit-scrollbar {
   .hero-circle-color {
     @apply rounded-full bg-emerald-300/20;
   }
+  .bg-gradient {
+    @apply bg-gradient-to-r from-emerald-300 to-sky-400;
+  }
 
   .bg-text-gradient {
-    @apply bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent;
+    @apply bg-gradient bg-clip-text text-transparent;
   }
 }
 

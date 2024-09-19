@@ -8,12 +8,19 @@ import { TestimonialsSection } from "@/sections/Testimonials";
 export default function Home() {
   return (
     <div className="no-scrollbar">
-      <Header />
-      <HeroSection />
-      <ProjectsSection />
-      <TapeSection />
-      <TestimonialsSection />
-      <AboutSection />
+      <header>
+        <Header />
+        <HeroSection />
+      </header>
+
+      <main>
+        <ProjectsSection />
+        <TapeSection />
+        <TestimonialsSection />
+        <AboutSection />
+      </main>
+
+      <footer></footer>
     </div>
   );
 }

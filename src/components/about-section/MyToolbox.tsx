@@ -7,15 +7,15 @@ import { ToolBoxItems } from "./ToolBoxItems";
 export const MyToolbox = () => {
   return (
     <>
-      <Card className="h-[320px] p-0">
+      <Card className="h-[320px]">
         <AboutCardHeader
           title="My Toolbox"
           description="Explore the technologies and tools that I use to craft exceptional digital experiences."
-          className="px-6 pt-6"
+          className=""
         />
 
         <div className="">
-          <ToolBoxItems items={toolBoxItems} className="mt-6" />
+          <ToolBoxItems items={toolBoxItems} className="" />
           <ToolBoxItems
             items={toolBoxItems}
             className="mt-6"

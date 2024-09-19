@@ -11,7 +11,7 @@ import { Card } from "@/components/ui/Card";
 export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-20 lg:py-24">
-      <section className="container">
+      <div className="container">
         <SectionHeader
           eyeBrows="Real-world Results"
           title="Featured Projects"
@@ -69,7 +69,7 @@ export const ProjectsSection = () => {
             </Card>
           ))}
         </div>
-      </section>
+      </div>
     </section>
   );
 };

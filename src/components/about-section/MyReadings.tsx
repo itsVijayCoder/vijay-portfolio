@@ -11,9 +11,10 @@ export const MyReadings = () => {
         <AboutCardHeader
           title="My Reads"
           description="Explore the books shaping my perspectives."
+          className="md:pb-5"
         />
 
-        <div className="mx-auto mt-8 w-40">
+        <div className="mx-auto mt-2 w-40 md:mt-0">
           <Image src={bookImage} alt="Book-Cover" />
         </div>
       </Card>
