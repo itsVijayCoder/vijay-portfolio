@@ -1,42 +1,42 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import cookingNotesLandingPage from "@/assets/images/cookingnotes.png";
+import mediClientLandingPage from "@/assets/images/medi-client.png";
+import portfolioLandingPage from "@/assets/images/portfolio.png";
 
 export const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Project - 1",
+    year: "2023",
+    title: "Medi Client Landing Page",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://cookingnotes-frontend.onrender.com/",
-    image: darkSaasLandingPage,
+    link: "https://tomvj1258.github.io/doctor-booking-vite/",
+    image: mediClientLandingPage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Project - 2",
+    year: "2023",
+    title: "Tasty Bites Landing Page",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
     link: "https://cookingnotes-frontend.onrender.com/",
-    image: lightSaasLandingPage,
+    image: cookingNotesLandingPage,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Project - 3",
+    year: "2024",
+    title: "My Portfolio Landing Page",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://cookingnotes-frontend.onrender.com/",
-    image: aiStartupLandingPage,
+    link: "https://vijay-dev-portfolio.vercel.app/",
+    image: portfolioLandingPage,
   },
 ];
