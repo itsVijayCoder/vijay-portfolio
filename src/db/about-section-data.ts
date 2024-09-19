@@ -44,7 +44,7 @@ export const hobbiesItems = [
     id: 1,
     title: "Travel",
     emoji: "🌍",
-    left: "10%",
+    left: "2%",
     top: "5%",
   },
   {
@@ -52,14 +52,14 @@ export const hobbiesItems = [
     title: "Photography",
     emoji: "📷",
     left: "50%",
-    top: "3%",
+    top: "2",
   },
 
   {
     id: 3,
     title: "Music",
     emoji: "🎵",
-    left: "1%",
+    left: "15%",
     top: "35%",
   },
   // {
@@ -73,7 +73,7 @@ export const hobbiesItems = [
     id: 5,
     title: "Cooking",
     emoji: "🍳",
-    left: "60%",
+    left: "70%",
     top: "30%",
   },
   {
@@ -83,13 +83,13 @@ export const hobbiesItems = [
     left: "5%",
     top: "65%",
   },
-  // {
-  //   id: 7,
-  //   title: "Cycling",
-  //   emoji: "🚴",
-  //   left: "40%",
-  //   top: "70%",
-  // },
+  {
+    id: 7,
+    title: "Cycling",
+    emoji: "🚴",
+    left: "35%",
+    top: "75%",
+  },
   {
     id: 8,
     title: "Fitness",
@@ -101,7 +101,7 @@ export const hobbiesItems = [
     id: 9,
     title: "Hiking",
     emoji: "🥾",
-    left: "38%",
+    left: "40%",
     top: "45%",
   },
 ];
