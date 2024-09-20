@@ -3,7 +3,6 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
 import Image from "next/image";
 import Link from "next/link";
-import { BgGrain } from "@/components/BgGrain";
 import { SectionHeader } from "@/components/SectionHeader";
 import { portfolioProjects } from "@/db/projectsData";
 import { Card } from "@/components/ui/Card";
@@ -19,10 +18,13 @@ export const ProjectsSection = () => {
         />
 
         <div className="mt-10 flex flex-col gap-20 md:mt-20">
-          {portfolioProjects?.map((project) => (
+          {portfolioProjects?.map((project, projectIndex) => (
             <Card
               key={project.title}
-              className="px-8 pb-0 pt-8 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
+              className="sticky px-8 pb-0 pt-8 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
+              style={{
+                top: `calc(64px + ${projectIndex * 40}px)`,
+              }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">

@@ -17,6 +17,10 @@ export const HeroStars = () => {
             key={item.id}
             size={item.orbitSize}
             rotation={item.orbitRotation}
+            orbitSpinDuration={item.orbitSpinDuration}
+            isOrbitSpin={item.isOrbitSpin}
+            isSpin={item.isSpin}
+            spinDuration={item.spinDuration}
           >
             {item.tag === "star" ? (
               <StarImage style={imgStyle} className={`hero-star-color`} />

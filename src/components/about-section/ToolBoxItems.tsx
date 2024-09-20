@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { AboutTechIcon } from "./AboutTechIcon";
 import { twMerge } from "tailwind-merge";
 type ItemsProps = {
@@ -30,14 +30,18 @@ export const ToolBoxItems = ({
           itemsWrapperClassName,
         )}
       >
-        {items?.map((item) => (
-          <div
-            className="inline-flex items-center justify-center gap-4 rounded-lg px-3 py-2 outline outline-2 outline-white/10"
-            key={item.id}
-          >
-            <AboutTechIcon component={item.iconType} />
-            <p className="font-semibold">{item.title}</p>
-          </div>
+        {[...new Array(2)].fill(0).map((_, index) => (
+          <Fragment key={index}>
+            {items?.map((item) => (
+              <div
+                className="inline-flex items-center justify-center gap-4 rounded-lg px-3 py-2 outline outline-2 outline-white/10"
+                key={item.id}
+              >
+                <AboutTechIcon component={item.iconType} />
+                <p className="font-semibold">{item.title}</p>
+              </div>
+            ))}
+          </Fragment>
         ))}
       </div>
     </div>

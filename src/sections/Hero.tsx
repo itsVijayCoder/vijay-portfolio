@@ -24,7 +24,9 @@ export const HeroSection = () => {
             alt="Person with laptop"
           />
           <div className="inline-flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-950 px-4 py-1.5">
-            <span className="size-2.5 rounded-full bg-green-500"></span>
+            <div className="relative size-2.5 rounded-full bg-green-500">
+              <span className="animate-ping-large absolute inset-0 rounded-full bg-green-500"></span>
+            </div>
             <div className="text-sm font-medium">
               Available for New Projects
             </div>
