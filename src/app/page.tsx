@@ -28,9 +28,9 @@ export default function Home() {
         <Footer />
       </footer>
 
-      <aside>
+      <div className="absolute">
         <SideUpArrow />
-      </aside>
+      </div>
     </div>
   );
 }
