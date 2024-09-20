@@ -15,11 +15,15 @@ export const MyToolbox = () => {
         />
 
         <div className="">
-          <ToolBoxItems items={toolBoxItems} className="" />
+          <ToolBoxItems
+            items={toolBoxItems}
+            itemsWrapperClassName="animate-move-left [animation-duration:30S] hover:[animation-play-state:paused]"
+          />
+
           <ToolBoxItems
             items={toolBoxItems}
             className="mt-6"
-            itemsWrapperClassName="-translate-x-1/2"
+            itemsWrapperClassName="animate-move-right [animation-duration:15s] hover:[animation-play-state:paused]"
           />
         </div>
       </Card>

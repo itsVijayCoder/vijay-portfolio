@@ -1,9 +1,12 @@
+"use client";
+
 import { hobbiesItems } from "@/db/about-section-data";
-import React from "react";
+import React, { useRef } from "react";
 import { Card } from "../ui/Card";
 import { AboutCardHeader } from "./AboutCardHeader";
-
+import { motion } from "framer-motion";
 export const MyHobbies = () => {
+  const constraintRef = useRef(null);
   return (
     <>
       <Card className="flex h-[320px] flex-col">
@@ -13,19 +16,21 @@ export const MyHobbies = () => {
           className=""
         />
 
-        <div className="relative flex-1">
+        <div className="relative flex-1" ref={constraintRef}>
           {hobbiesItems?.map((hobby) => (
-            <div
+            <motion.div
               key={hobby.id}
               className="bg-gradient absolute inline-flex gap-2 rounded-full px-6 py-1.5"
               style={{
                 top: hobby.top,
                 left: hobby.left,
               }}
+              drag
+              dragConstraints={constraintRef}
             >
               <span className="font-medium text-gray-950">{hobby.title}</span>
               <span className="">{hobby.emoji}</span>
-            </div>
+            </motion.div>
           ))}
         </div>
       </Card>
