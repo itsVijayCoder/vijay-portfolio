@@ -21,11 +21,16 @@ export const ContactSection = () => {
           </div>
 
           <div className="">
-            <button className="inline-flex h-12 w-max items-center gap-3 rounded-xl border border-gray-900 bg-gray-900 px-6 text-white/90 hover:bg-gray-900/90">
+            <a
+              href="mailto:vijaydeveloper1258@gmail.com"
+              className="inline-flex h-12 w-max items-center gap-3 rounded-xl border border-gray-900 bg-gray-900 px-6 text-white/90 hover:bg-gray-900/90"
+            >
               <ContactPhoneIcon className="size-5" />
+
               <span className="font-semibold">Contact Me</span>
+
               <ArrowUpRightIcon className="size-4" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
