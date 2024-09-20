@@ -1,3 +1,4 @@
+import { SideUpArrow } from "@/components/SideUpArrow";
 import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/Contact";
 import { Footer } from "@/sections/Footer";
@@ -9,7 +10,7 @@ import { TestimonialsSection } from "@/sections/Testimonials";
 
 export default function Home() {
   return (
-    <div className="no-scrollbar">
+    <div className="no-scrollbar relative">
       <header>
         <Header />
         <HeroSection />
@@ -26,6 +27,10 @@ export default function Home() {
       <footer>
         <Footer />
       </footer>
+
+      <aside>
+        <SideUpArrow />
+      </aside>
     </div>
   );
 }
