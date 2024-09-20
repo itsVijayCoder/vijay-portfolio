@@ -13,14 +13,14 @@ export const footerLinks = [
     id: 2,
     title: "LinkedIn",
     icon: LinkedinIcon,
-    href: "#",
+    href: "https://www.linkedin.com/in/vijaysubramanian1258",
   },
 
   {
     id: 3,
     title: "Instagram",
     icon: InstagramIcon,
-    href: "#",
+    href: "https://www.instagram.com/vijaytom_1258",
   },
   // {
   //   id: 4,
