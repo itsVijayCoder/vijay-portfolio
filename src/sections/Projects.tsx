@@ -1,3 +1,4 @@
+"use client";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
@@ -6,6 +7,7 @@ import Link from "next/link";
 import { SectionHeader } from "@/components/SectionHeader";
 import { portfolioProjects } from "@/db/projectsData";
 import { Card } from "@/components/ui/Card";
+import Button from "@/components/ui/Button";
 
 export const ProjectsSection = () => {
   return (
@@ -21,17 +23,19 @@ export const ProjectsSection = () => {
           {portfolioProjects?.map((project, projectIndex) => (
             <Card
               key={project.title}
-              className="sticky px-8 pb-0 pt-8 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
+              className="sticky px-8 pb-0 pt-8 md:px-10 md:pt-8 lg:px-16 lg:pt-14"
               style={{
                 top: `calc(64px + ${projectIndex * 40}px)`,
               }}
             >
-              <div className="lg:grid lg:grid-cols-2 lg:gap-16">
+              <div className="lg:grid lg:grid-cols-2 lg:gap-2">
                 <div className="lg:pb-16">
                   <div className="bg-text-gradient inline-flex gap-2 text-sm font-bold uppercase tracking-widest">
                     <span className="">{project.company}</span>
                     <span className="">&bull;</span>
                     <span className="">{project.year}</span>
+                    <span className="">&bull;</span>
+                    <span className="">{project.stack}</span>
                   </div>
 
                   <h3 className="mt-2 font-calistoga text-2xl md:mt-5 md:text-4xl">
@@ -52,11 +56,35 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
 
+                  <ul className="mt-4 flex flex-wrap gap-4 md:mt-5">
+                    {project.techStack?.map((tech) => (
+                      <li
+                        key={tech}
+                        className="flex gap-2 font-calistoga text-sm text-white md:text-base"
+                      >
+                        <div className="bg-text-gradient inline-flex">
+                          <span className="">&bull;</span>
+                        </div>
+                        <p>{tech}</p>
+                      </li>
+                    ))}
+                  </ul>
+
                   <Link href={project.link} target="_blank">
-                    <button className="btn-white mt-8 w-full font-semibold md:w-fit">
+                    {/* <button className="btn-white mt-8 w-full font-semibold  md:w-fit">
                       <span className="">Visit Live Site</span>
                       <ArrowUpRightIcon className="size-5" />
-                    </button>
+                    </button> */}
+
+                    <Button
+                      title={"Visit Live Site"}
+                      onClick={() => window.open(project.link, "_blank")}
+                      rightIcon={<ArrowUpRightIcon className="size-8" />}
+                      containerClass={
+                        "btn-white mt-8 w-full text-xl font-semibold md:w-fit"
+                      }
+                      leftIcon={""}
+                    />
                   </Link>
                 </div>
 

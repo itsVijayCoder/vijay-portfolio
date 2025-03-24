@@ -16,7 +16,7 @@ export const MyHobbies = () => {
           className=""
         />
 
-        <div className="relative flex-1" ref={constraintRef}>
+        <div className="relative flex-1 cursor-pointer" ref={constraintRef}>
           {hobbiesItems?.map((hobby) => (
             <motion.div
               key={hobby.id}

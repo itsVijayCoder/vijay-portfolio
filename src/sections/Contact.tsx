@@ -1,8 +1,13 @@
+"use client";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import ContactPhoneIcon from "@/assets/icons/phone.svg";
 import { BgGrain } from "@/components/BgGrain";
+import Button from "@/components/ui/Button";
 
 export const ContactSection = () => {
+  const handleContactClick = () => {
+    window.location.href = "mailto:vijaydeveloper1258@gmail.com";
+  };
   return (
     <section id="contact" className="py-20 lg:py-24">
       <div className="container">
@@ -21,7 +26,16 @@ export const ContactSection = () => {
           </div>
 
           <div className="">
-            <a
+            <Button
+              onClick={handleContactClick}
+              title={"Contact Me"}
+              leftIcon={<ContactPhoneIcon className="size-8" />}
+              rightIcon={<ArrowUpRightIcon className="size-8" />}
+              containerClass={
+                " border border-gray-900 bg-gray-900 text-white/90 hover:bg-gray-900/90"
+              }
+            />
+            {/* <a
               href="mailto:vijaydeveloper1258@gmail.com"
               className="inline-flex h-12 w-max items-center gap-3 rounded-xl border border-gray-900 bg-gray-900 px-6 text-white/90 hover:bg-gray-900/90"
             >
@@ -30,7 +44,7 @@ export const ContactSection = () => {
               <span className="font-semibold">Contact Me</span>
 
               <ArrowUpRightIcon className="size-4" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

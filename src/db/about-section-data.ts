@@ -4,6 +4,10 @@ import Html5Icon from "@/assets/icons/html5.svg";
 import Css3Icon from "@/assets/icons/css3.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import ChromeIcon from "@/assets/icons/chrome.svg";
+import NextIcon from "@/assets/icons/next.svg";
+import TypescriptIcon from "@/assets/icons/typescript.svg";
+import NodeIcon from "@/assets/icons/node.svg";
+import MongoDBIcon from "@/assets/icons/mongodb.svg";
 
 export const toolBoxItems = [
   {
@@ -29,13 +33,33 @@ export const toolBoxItems = [
   },
   {
     id: 5,
+    title: "Next.js",
+    iconType: NextIcon,
+  },
+  {
+    id: 6,
+    title: "TypeScript",
+    iconType: TypescriptIcon,
+  },
+  {
+    id: 7,
     title: "Github",
     iconType: GithubIcon,
   },
   {
-    id: 6,
+    id: 8,
     title: "Chrome",
     iconType: ChromeIcon,
+  },
+  {
+    id: 9,
+    title: "Node Js",
+    iconType: NodeIcon,
+  },
+  {
+    id: 10,
+    title: "MongoDB",
+    iconType: MongoDBIcon,
   },
 ];
 
