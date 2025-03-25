@@ -8,7 +8,7 @@ export const portfolioProjects = [
   {
     company: "Project - 4",
     year: "2025",
-    stack: "Frontend -(ANIMATION)",
+    stack: "Frontend",
     title: "Zentry Clone Landing Page",
     results: [
       { title: "Smooth scroll animations with GSAP" },

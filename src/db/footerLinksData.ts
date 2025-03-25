@@ -7,7 +7,7 @@ export const footerLinks = [
     id: 1,
     title: "Github",
     icon: GithubIcon,
-    href: "https://github.com/tomvj1258",
+    href: "https://github.com/itsVijayCoder",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ export const footerLinks = [
     id: 3,
     title: "Instagram",
     icon: InstagramIcon,
-    href: "https://www.instagram.com/vijaytom_1258",
+    href: "https://www.instagram.com/its_vijay_1258",
   },
   // {
   //   id: 4,
