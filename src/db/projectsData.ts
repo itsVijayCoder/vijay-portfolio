@@ -17,7 +17,7 @@ export const portfolioProjects = [
       { title: "Mobile-friendly layout with no broken UI" },
     ],
     techStack: ["React", "GSAP", "Tailwind CSS", "Vercel"],
-    link: "https://zentry-clone-vs.vercel.app/",
+    link: "https://vs-zentry-clone.vercel.app/",
     image: zentryLandingPage,
   },
   {
