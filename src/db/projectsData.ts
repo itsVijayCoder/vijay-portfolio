@@ -62,7 +62,7 @@ export const portfolioProjects = [
       { title: "Easy access to medical records" },
     ],
     techStack: ["React.js", "Tailwind CSS", "GitHub Pages"],
-    link: "https://itsVijayCoder.github.io/doctor-booking-vite/",
+    link: "https://vs-medi-client.vercel.app/",
     image: mediClientLandingPage,
   },
 ];
