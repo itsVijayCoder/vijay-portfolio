@@ -61,7 +61,7 @@ export const portfolioProjects = [
       { title: "Search doctors by specialty and location" },
       { title: "Easy access to medical records" },
     ],
-    techStack: ["React.js", "Tailwind CSS", "GitHub Pages"],
+    techStack: ["React.js", "Tailwind CSS", "Vercel"],
     link: "https://vs-medi-client.vercel.app/",
     image: mediClientLandingPage,
   },
